@@ -1,5 +1,10 @@
 name: Release
-on: [push]
+# on: [push]
+on:
+  workflow_dispatch: {}
+  push:
+    branches:
+      - master
 jobs:
   build:
     runs-on: ubuntu-latest
